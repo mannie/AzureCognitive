@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Examples.playground">
+   </FileRef>
+   <FileRef
       location = "group:AzureCognitive/AzureCognitive.xcodeproj">
    </FileRef>
 </Workspace>
