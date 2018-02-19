@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3622403620365B9200FA80AC /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622403520365B9200FA80AC /* Request.swift */; };
+		3622403820365BD200FA80AC /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622403720365BD200FA80AC /* Networking.swift */; };
+		3622403A20365CAF00FA80AC /* ServiceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622403920365CAF00FA80AC /* ServiceInfo.swift */; };
+		3622403C2036622300FA80AC /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622403B2036622300FA80AC /* Environment.swift */; };
+		3622403E2036645D00FA80AC /* AzureCognitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622403D2036645D00FA80AC /* AzureCognitive.swift */; };
+		362240422037AA7400FA80AC /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362240412037AA7400FA80AC /* StringExtensions.swift */; };
 		36C07886203647D500725002 /* AzureCognitive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C0787C203647D500725002 /* AzureCognitive.framework */; };
 		36C0788B203647D500725002 /* AzureCognitiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0788A203647D500725002 /* AzureCognitiveTests.swift */; };
 		36C0788D203647D500725002 /* AzureCognitive.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C0787F203647D500725002 /* AzureCognitive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36C07898203655F400725002 /* AutoSuggest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C07897203655F400725002 /* AutoSuggest.swift */; };
+		36FA2407203A5B3B00FE8BAE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FA2406203A5B3B00FE8BAE /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3622403520365B9200FA80AC /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		3622403720365BD200FA80AC /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		3622403920365CAF00FA80AC /* ServiceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInfo.swift; sourceTree = "<group>"; };
+		3622403B2036622300FA80AC /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		3622403D2036645D00FA80AC /* AzureCognitive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureCognitive.swift; sourceTree = "<group>"; };
+		362240412037AA7400FA80AC /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		36C0787C203647D500725002 /* AzureCognitive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AzureCognitive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C0787F203647D500725002 /* AzureCognitive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzureCognitive.h; sourceTree = "<group>"; };
 		36C07880203647D500725002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +44,7 @@
 		36C0788A203647D500725002 /* AzureCognitiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureCognitiveTests.swift; sourceTree = "<group>"; };
 		36C0788C203647D500725002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36C07897203655F400725002 /* AutoSuggest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSuggest.swift; sourceTree = "<group>"; };
+		36FA2406203A5B3B00FE8BAE /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3622403420365B3300FA80AC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				36FA2405203A5AFA00FE8BAE /* AzureCognitive */,
+				36FA2408203A5BB300FE8BAE /* Networking */,
+				362240412037AA7400FA80AC /* StringExtensions.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		36C07872203647D500725002 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +99,7 @@
 			children = (
 				36C0787F203647D500725002 /* AzureCognitive.h */,
 				36C07880203647D500725002 /* Info.plist */,
+				3622403420365B3300FA80AC /* Core */,
 				36C07896203655BD00725002 /* Search */,
 			);
 			path = AzureCognitive;
@@ -95,6 +120,26 @@
 				36C07897203655F400725002 /* AutoSuggest.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		36FA2405203A5AFA00FE8BAE /* AzureCognitive */ = {
+			isa = PBXGroup;
+			children = (
+				36FA2406203A5B3B00FE8BAE /* API.swift */,
+				3622403D2036645D00FA80AC /* AzureCognitive.swift */,
+				3622403920365CAF00FA80AC /* ServiceInfo.swift */,
+			);
+			path = AzureCognitive;
+			sourceTree = "<group>";
+		};
+		36FA2408203A5BB300FE8BAE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3622403B2036622300FA80AC /* Environment.swift */,
+				3622403720365BD200FA80AC /* Networking.swift */,
+				3622403520365B9200FA80AC /* Request.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +254,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				36C07898203655F400725002 /* AutoSuggest.swift in Sources */,
+				3622403820365BD200FA80AC /* Networking.swift in Sources */,
+				3622403A20365CAF00FA80AC /* ServiceInfo.swift in Sources */,
+				362240422037AA7400FA80AC /* StringExtensions.swift in Sources */,
+				3622403C2036622300FA80AC /* Environment.swift in Sources */,
+				3622403E2036645D00FA80AC /* AzureCognitive.swift in Sources */,
+				36FA2407203A5B3B00FE8BAE /* API.swift in Sources */,
+				3622403620365B9200FA80AC /* Request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
